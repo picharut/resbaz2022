@@ -1,8 +1,8 @@
 ---
-title: "Your awesome project title"
+title: "ResBaz Quarto Project"
 author:
-  name: "You et al"
-  affiliation: "From whence you hail"
+  name: "picharut"
+  affiliation: "somewhere"
 date: today
 bibliography: refs.bib
 from: markdown+emoji
@@ -10,6 +10,7 @@ format:
   html:
     code-fold: false
     link-external-newwindow: true
+    toc: true
 theme:
   light: flatly
   dark: darkly
@@ -51,6 +52,18 @@ In the template Introduction section take 3-4 minutes to write:
 
 - remove this callout and render the document and hit the :heavy_check_mark: in zoom
 :::
+## Sub-header
+a list
+
+- item 1
+- item 2
+- item 3
+
+$$
+X = \frac{\sqrt{\sigma A}}{k}
+$$
+
+[@chamberlin1897; @perkel2022]
 
 # Libraries {.unnumbered .unlisted}
 
@@ -71,7 +84,6 @@ If you want to use Python code check out the documentation [here](https://quarto
 
  - render the document and hit the :heavy_check_mark: in zoom
 :::
-
 
 ```{r Libraries}
 #| include: true
@@ -94,6 +106,19 @@ pacman::p_load(ggplot2, palmerpenguins)    # Install & load packages
 - render the document and hit the :heavy_check_mark: in zoom
 :::
 
+:::{.panel-tabset}
+# something
+```{r}
+13 + 59
+```
+
+# Tab 1
+`13 + 54`
+
+# Tab 2
+content
+:::
+
 # Images
 
 :::{.callout-tip}
@@ -104,6 +129,7 @@ pacman::p_load(ggplot2, palmerpenguins)    # Install & load packages
 - render the document and hit the :heavy_check_mark: in zoom
 :::
 
+![fixing](./images/fixing_problems.png)
 
 # let'g go Git it
 
